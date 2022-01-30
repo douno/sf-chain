@@ -8,7 +8,7 @@ class Transaction {
   }
 
   static newTransaction(senderWallet, recipient, amount) {
-    const transation = new this();
+    const transaction = new this();
 
     if (amount > senderWallet.balance) {
       console.log(`Amount: ${amount} exceeds balance.`);
@@ -20,7 +20,7 @@ class Transaction {
       { amount, address: recipient}
     ])
 
-    return transation;
+    return transaction;
   }
 
 }
